@@ -1,0 +1,12 @@
+# Assembly Line Balancing — dipendenze Python
+# Testate con Python 3.9.6 su macOS.
+# Installazione:  pip install -r requirements.txt
+
+pandas==2.3.3      # struttura dati (DataFrame) e tabelle
+openpyxl==3.1.5    # lettura del dataset .xlsx e scrittura dell'output Excel
+ipykernel==6.31.0  # kernel per eseguire il notebook (include IPython + autoreload)
+graphviz==0.21     # grafo delle precedenze (plot_precedence_graph.py)
+
+# NB: graphviz richiede anche il binario di sistema "Graphviz", NON installabile
+# con pip:   macOS -> brew install graphviz   |   Debian/Ubuntu -> apt-get install graphviz
+# Serve solo per generare il grafo delle precedenze, non per il notebook.
